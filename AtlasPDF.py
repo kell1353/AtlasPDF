@@ -54,7 +54,7 @@ with open('./AtlasTest.pdf', 'rb') as pdf_file:
     #Updates parts_dict with new value strings (removes double spaces and creates key and value pairings)
     for part in parts:
         #Creates a list for each part - separates each bullet info
-        row_parts = part.split('  ')
+        row_parts = part.split('  ')                                         ######## Has to do with the long dash in parentheses
         # row_parts = re.split('(?<=\)\s+)', part)
         # row_parts = re.split('(?<=\)\s\s\w)', part)
         # row_parts = re.split('(?=\)\s\s)', part)
